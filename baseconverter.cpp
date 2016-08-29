@@ -56,7 +56,7 @@ string toBase(int b, double num){
 	double power;
 	do{
 		power = pow(b,start-i);
-		times = (int)floor(value/power);//divide(value,power);
+		times = (int)floor(value/power);
 		temp+=toValue(times);
 		value-=power*times;
 		if(start-i==0&&value>0)temp+=".";
